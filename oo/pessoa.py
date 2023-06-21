@@ -2,4 +2,10 @@
 # e se hover mais palavras juntas, essas dever também começãr da mesma forma
 
 class Pessoa:
-    pass
+    def cumprimentar(self):
+        return 'ola'
+
+if __name__ == '__main__':
+    p= Pessoa()
+    print(Pessoa.cumprimentar(p))
+    print(id(p.cumprimentar()))
