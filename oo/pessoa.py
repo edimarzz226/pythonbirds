@@ -19,5 +19,8 @@ if __name__ == '__main__':
     print(Edimar.idade)
     for filho in Edimar.filhos:
         print(filho.nome)
+    Edimar.sobrenome = 'Fernandes'
+    print(Edimar.__dict__) # vai aparecer um dicionário com os atributos que foram todos definidos acima idade, nome , filhos e o que foi criado dinamicamente sobrenome = Fernandes
+    print(Isabella.__dict__) # Aqui diferente do objeto Isabella que não foi criado um atributo chamado sobrenome
 
 
